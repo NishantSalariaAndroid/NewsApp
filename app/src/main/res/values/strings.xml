@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="title_activity_compose">News App</string>
+    <string name="title_news_list">News List</string>
+    <string name="title_news_detail">New Detail</string>
+
+</resources>

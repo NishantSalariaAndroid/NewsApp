@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="article"
+            type="com.example.newdemo.data.models.Article" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/articleItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ImageView for article image -->
+        <ImageView
+            android:id="@+id/articleImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"/>
+        <!-- Title TextView for the article -->
+        <TextView
+            android:id="@+id/articleTitle"
+            app:layout_constraintStart_toEndOf="@id/articleImage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{article.title}"
+            android:layout_marginStart="12dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:gravity="center_vertical"/>
+
+        <!-- Description TextView for the article -->
+        <TextView
+            android:id="@+id/articleDescription"
+            app:layout_constraintStart_toEndOf="@id/articleImage"
+            app:layout_constraintTop_toBottomOf="@id/articleTitle"
+            app:layout_constraintTop_toTopOf="@+id/articleImage"
+            app:layout_constraintBottom_toBottomOf="@+id/articleImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:text="@{article.description}"
+            android:maxLines="3"
+            android:textSize="12sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

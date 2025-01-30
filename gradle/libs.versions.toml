@@ -1,0 +1,74 @@
+[versions]
+agp = "8.4.2"
+kotlin = "1.9.0"
+kapt = "1.9.0"
+android = "7.4.2"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+mockitoCore = "3.11.0"
+lifecycleRuntimeKtx = "2.7.0"
+activityCompose = "1.9.0"
+composeBom = "2023.08.00"
+picassoVersion = "2.8"
+retofiltVersion = "2.9.0"
+gsonVersion = "2.9.0"
+databindingRuntime = "8.8.0"
+koinCoreVersion = "3.2.0"
+koinAndroidVersion = "3.5.6"
+roomVersion = "2.6.1"
+
+
+
+
+
+
+
+
+
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-retrofit-android = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retofiltVersion" }
+androidx-gson-android = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gsonVersion" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-databinding-runtime = { group = "androidx.databinding", name = "databinding-runtime", version.ref = "databindingRuntime" }
+androidx-picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picassoVersion" }
+androidx-koin = { group = "io.insert-koin", name = "koin-core", version.ref = "koinCoreVersion" }
+androidx-koinandroid = { group = "io.insert-koin", name = "koin-android", version.ref = "koinAndroidVersion" }
+androidx-room = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
+androidx-roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
+androidx-roomktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
+
+
+
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinKapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
